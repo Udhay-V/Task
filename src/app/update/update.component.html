@@ -1,0 +1,21 @@
+<div class="form-control">
+    <h1>Update Account</h1>
+    <form [formGroup]="update">
+       
+        <input class="form-control form-control-lg" type="text" formControlName="id" placeholder="your Id" [(ngModel)]="id"><br><br>
+
+        <input class="form-control form-control-lg" type="text" formControlName="Fullname" placeholder="your Fullname"><br><br>
+
+        <input class="form-control form-control-lg" type="text" formControlName="Emailid" placeholder="your Emailid"><br><br>
+
+        <input class="form-control form-control-lg" type="text" formControlName="Gender" placeholder="your Gender"><br><br>
+
+        <input class="form-control form-control-lg" type="int" formControlName="Age" placeholder="your Age"><br><br>
+
+        <input class="form-control form-control-lg" type="int" formControlName="AlterNo" placeholder="your Alter No"><br><br>
+
+        <button (click)="onSubmit()">Update</button> <button (click)="onDelete()">Delete</button>
+
+    </form>
+</div>
+
