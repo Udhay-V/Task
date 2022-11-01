@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body 
+{
+  overflow: hidden;
+  font-family: 'Roboto' ,sans-serif;
+}
+
+/* Styles */
+#content .navbar
+{   
+    right:400px;
+    text-align: center;
+    position: absolute;
+    margin-top: 40px;
+}
+#content 
+{
+  width: 100%;
+  display: flex;
+  position: fixed;
+}
+#content .row1 
+{
+    color:#23A46E;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+#content .row2 i
+{
+    margin-left:40px;
+    font-size: 25px;
+}
+#content .row3 p
+{
+margin-top: 30px;
+margin-left:50px;
+margin-bottom: 70px;
+}
+#content .row4 input
+{
+    width:400px;
+    padding: 15px;
+    margin-left: 100px;
+    border: none;
+    background-color:#D8ECD1;
+    
+}
+#content .row4 button
+{
+    background-color:#23A46E;
+    color:#fff;
+    margin-left: 130px;
+    margin-top: 50px;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 30px; 
+    border: none; 
+}
+/* Sidebar  */
+
+#sidebar {
+  position: fixed;
+  left: 400px;
+  width: 400px;
+  height: 100%;
+  margin-left: -400px;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20201123/pngtree-green-soft-pale-gradual-background-image_473650.jpg");
+}
+
+#sidebar header
+ { 
+  font-size: 20px;
+  line-height: 75px;
+  text-align: left;
+  margin-left: 20px;
+  text-shadow: 2px 3px 4px black;
+}
+
+#sidebar header a {
+color: #fafaff;
+text-decoration: none;
+}
+#sidebar .row1 h1
+{
+color:#fafaff;
+text-align: center;
+margin-top: 150px;
+font-size: 50px;
+}
+#sidebar .row2 p
+{
+    text-align: center;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+#sidebar .row3 button
+{
+align-items: center;
+margin-left: 100px;
+margin-top: 70px;
+padding: 15px;
+padding-left: 60px;
+padding-right: 60px;
+border-radius: 30px;
+background: transparent;
+border:1px solid #fff;
+color:#fafaff;
+box-shadow: 2px 3px 4px rgb(88, 87, 87);
+}
+
+
+
+
+
+

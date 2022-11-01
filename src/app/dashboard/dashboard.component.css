@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #1373F2;
+
+}
+
+#sidebar header {
+  background-color: #1373F2;
+  border-bottom: 1px solid #455A64;
+  font-size: 20px;
+  line-height: 70px;
+  text-align: center;
+ 
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  border:1 solid #455A64;
+  text-decoration: none;
+}
+#sidebar hr
+{
+    border:1px solid grey;
+}
+#sidebar p
+{
+    color:#CFD8DC;
+}
+
+#sidebar .nav a{
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 16px 24px;
+}
+
+#sidebar .nav a i{
+ text-decoration: none;
+  margin-right: 20px;
+ 
+}
+
+#content .container-fluid .d-flex
+{  
+   font-size: 20px;
+   box-shadow: 3px 4px 5px #455A64 ;
+   padding: 20px;
+}
+#content .container-fluid li
+{
+    text-align: right;
+    color: #455A64;
+    margin-right: 100px;
+    font-size: 20px;
+    margin-top: -15px;
+}
+#content .container-fluid button
+{
+   text-align: right;
+    font-size: 15px;
+    background-color: #1373F2;
+    border:1px solid #1373F2 ;
+}

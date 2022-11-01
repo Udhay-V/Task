@@ -1,0 +1,35 @@
+<div class="form-control">
+
+    <h1>Create Account</h1>
+
+      <form [formGroup]="form"> 
+    
+        <input class="form-control form-control-lg" type="name" formControlName="name" placeholder="your name"><br><br>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
+        <div class=valid *ngIf="name.errors?.['required']">This field is required.</div>
+        </div>
+
+        <input class="form-control form-control-lg" type="mobileno" formControlName="mobileno" placeholder="your mobile no"><br><br>
+        <div *ngIf="mobileno.invalid && (mobileno.dirty || mobileno.touched)" class="invalid-feedback">
+        <div class=valid *ngIf="mobileno.errors?.['required'] || mobileno.errors.maxlength  || mobileno.errors.minlength || mobileno.errors.pattern">This no field is required.</div>
+        </div>
+
+        <input class="form-control form-control-lg" type="emailid" formControlName="emailid" placeholder="your email id"><br><br>
+        <div *ngIf="emailid.invalid && (emailid.dirty || emailid.touched)" class="invalid-feedback">
+        <div class=valid *ngIf="emailid.errors?.['required']"> Invalid email id. </div>
+        <div *ngIf="!emailid.errors?.['required'] && emailid.errors?.['emailValidator'] ||emailid.errors.pattern"> Invalid email format.</div>
+        </div>
+
+        <input class="form-control form-control-lg" type="password"  formControlName="password" placeholder="your password"><br><br> 
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="invalid-feedback">
+        <div class=valid *ngIf="password.errors?.['required']">password is required.</div>
+        </div>
+
+        <input class="form-control form-control-lg" type="confirmpassword" formControlName="confirmpassword" placeholder="your confirm password"><br><br>
+        <div class=valid *ngIf="form.hasError('notSame')">confirmpassword not same.</div>
+
+      <button (click)="onSubmit()"><b>SIGNUP</b></button>
+
+    </form> 
+
+</div>  
