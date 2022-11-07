@@ -1,0 +1,144 @@
+<div class="containers">
+  <div class="row">
+
+    <!-- left side -->
+    <div class="col-sm-3">
+      <div class="row">
+
+        <header>
+          <a>Fujitsu</a>
+        </header>
+        <!-- header -->
+        <div class="header">
+          <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+              <h1>Welcome Back!</h1>
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+        </div>
+        <!-- pragraph -->
+        <div class="p">
+          <p>To keep connected with us please login<br>
+            with your personal information</p>
+        </div>
+
+        <!-- button -->
+        <div class="button">
+          <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+              <a href="signup"><button><b>SIGN UP</b></button></a>
+              <!-- <a href="dashboard">Dashboard</a> -->
+            </div>
+            <div class="col-">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right side -->
+    <div class="col-sm-9">
+
+      <div class="row">
+
+        <!-- start -->
+        <div class="col-1">
+        </div>
+
+        <!-- middle -->
+        <div class="col-10">
+          <div class="header">
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-10 bg">
+                <h1>Create Account</h1>
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="content">
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-10">
+                <ol type="none">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-twitter"></i>
+                </ol>
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- p -->
+          <div class="p">
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-10">
+                <p>or use your email for registration</p>
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- form -->
+          <div class="form">
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-10">
+                <form [formGroup]="signin" (ngSubmit)="onSubmit()">
+
+                  <input class="form-control form-control-lg" type="text" placeholder="Name"
+                    formControlName="Name"><br><br>
+                  <div *ngIf="Name.invalid && (Email.dirty || Name.touched)" class="invalid-feedback">
+                    <div class=valid *ngIf="Name.errors?.['required'] ||Name.errors.pattern"> Invalid Name. </div>
+                  </div>
+
+                  <input class="form-control form-control-lg" type="text" placeholder="Email"
+                    formControlName="Email"><br><br>
+                  <div *ngIf="Email.invalid && (Email.dirty || Email.touched)" class="invalid-feedback">
+                    <div class=valid *ngIf="Email.errors?.['required'] ||Email.errors.pattern"> Invalid Email id. </div>
+                  </div>
+
+                  <input class="form-control form-control-lg" type="text" placeholder="Password"
+                    formControlName="Password"><br><br>
+                  <div *ngIf="Password.invalid && (Password.dirty || Password.touched)" class="invalid-feedback">
+                    <div class=valid *ngIf="Password.errors?.['required']"> password is required.</div>
+                  </div>
+
+                  <a href="update"><button (click)="onSubmit()"><b>SIGN IN</b></button></a>
+
+                </form>
+              </div>
+
+              <div class="col-1">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- final  -->
+        <div class="col-1">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
