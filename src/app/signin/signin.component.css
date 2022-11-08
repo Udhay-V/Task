@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
-/* column-3 */
-.col-sm-3
+/* column-4 */
+.col-sm-4
 { 
   position:relative;
   height:100vh;
   background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20201123/pngtree-green-soft-pale-gradual-background-image_473650.jpg");
 }
 
-.col-sm-3 header 
+.col-sm-4 header 
 {
   font-size: 20px;
   line-height: 75px;
@@ -17,64 +16,64 @@
   text-shadow: 2px 3px 4px black;
 }
 
-.col-sm-3 header a 
+.col-sm-4 header a 
 {
   color: #fafaff;
   text-decoration: none;
 }
 
-.col-sm-3 h1 
+.col-sm-4 h1 
 {
   color: #fafaff;
   text-align: center;
   margin-top: 150px;
-  font-size: 40px;
+  font-size: 60px;
 }
 
-.col-sm-3 p 
+.col-sm-4 p 
 {
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   color: #FFFFFF;
 }
 
-.col-sm-3 button 
+.col-sm-4 button 
 {
   background: transparent;
   color: #fff;
-  margin-left: -10px;
+  margin-left: -25px;
   margin-top: 50px;
   padding: 15px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
   border-radius: 30px;
   border:1px solid #fff;
   box-shadow: 2px 3px 4px rgb(88, 87, 87);
 } 
 
-/* column-9 */
-.col-sm-9 h1
+/* column-8 */
+.col-sm-8 h1
 {
 color: #23A46E;
-margin-top: 30px;
-font-size: 40px;
-margin-left: 50px;
+margin-top: 50px;
+font-size: 45px;
+margin-left: 20px;
 }
 
-.col-sm-9 i 
+.col-sm-8 i 
 {
   margin-left: 50px;
   font-size: 25px;
 }
 
-.col-sm-9 p 
+.col-sm-8 p 
 {
 margin-top: 30px;
 margin-left: 70px;
 margin-bottom: 70px;
 }
 
-.col-sm-9 input 
+.col-sm-8 input 
 {
   width: 350px;
   padding: 15px;
@@ -82,7 +81,7 @@ margin-bottom: 70px;
   background-color: #D8ECD1;
 }
 
-.col-sm-9 button 
+.col-sm-8 button 
 {
   background-color: #23A46E;
   color: #fff;
